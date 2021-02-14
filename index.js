@@ -184,6 +184,10 @@ var app = new Vue({
       if (this.video.seen === true) {
         this.video.seen = false;
         this.appbackground.src = planszeB[0];
+        this.buttonforwardkonc.bottom="";
+        this.buttonforwardkonc.top="72px";
+        this.buttonreversekonc.bottom="";
+        this.buttonreversekonc.top="72px";
       }
 
 
@@ -198,6 +202,10 @@ var app = new Vue({
         this.plansza1.seen = false;
         this.buttonreversekonc.seen = false;
         this.buttonforwardkonc.seen = false;
+        this.buttonforwardkonc.bottom="50px";
+        this.buttonforwardkonc.top="";
+        this.buttonreversekonc.bottom="50px";
+        this.buttonreversekonc.top="";
       }
     },
     btnrevB: function () {
@@ -226,6 +234,10 @@ var app = new Vue({
       if (this.appbackground.src === this.planszeTypB.src[0]) {
         this.appbackground.src = backgrounds[2];
         this.video.seen = true;
+        this.buttonforwardkonc.bottom="50px";
+        this.buttonforwardkonc.top="";
+        this.buttonreversekonc.bottom="50px";
+        this.buttonreversekonc.top="";
       }
 
 
@@ -241,6 +253,10 @@ var app = new Vue({
         this.video.seen = false;
         this.appbackground.src = this.planszeTypC.src[this.licznik.planszeClicz];
         //this.appbackground.src = "./images/pytanie1.jpg";
+        this.buttonforwardC.top="72px";
+        this.buttonforwardC.bottom="";
+        this.buttonreverseC.top="72px";
+        this.buttonreverseC.bottom="";
 
       }
       if (this.licznik.planszeClicz === 8) {
@@ -252,6 +268,10 @@ var app = new Vue({
         //this.plansza1.seen = false;
         this.buttonreverseC.seen = false;
         this.buttonforwardC.seen = false;
+        this.buttonforwardC.top="";
+        this.buttonforwardC.bottom="50px";
+        this.buttonreverseC.top="";
+        this.buttonreverseC.bottom="50px";
       }
 
 
@@ -274,10 +294,15 @@ var app = new Vue({
         this.buttonreverseC.seen = false;
         this.buttonforwardC.seen = false;
         this.licznik.planszeClicz = 0;
+       
       }
       if (this.appbackground.src === planszeC[0]) {
         this.appbackground.src = backgrounds[2];
         this.video.seen = true;
+        this.buttonforwardC.top="";
+        this.buttonforwardC.bottom="50px";
+        this.buttonreverseC.top="";
+        this.buttonreverseC.bottom="50px";
       }
 
     }
