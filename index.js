@@ -47,6 +47,16 @@ var app = new Vue({
         src: planszeA[0],
         seen: false
       },
+      subtitle:{
+        podsum1:{
+          seen:false,
+          src:""
+        },
+        podsum2:{
+          seen:false,
+          src:""
+        }
+      },
       buttonforward: {
         seen: false,
         top:"",
