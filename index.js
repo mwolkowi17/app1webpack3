@@ -198,6 +198,7 @@ var app = new Vue({
         this.buttonforwardkonc.top="72px";
         this.buttonreversekonc.bottom="";
         this.buttonreversekonc.top="72px";
+        this.subtitle.podsum1.seen=true;
       }
 
 
@@ -216,6 +217,7 @@ var app = new Vue({
         this.buttonforwardkonc.top="";
         this.buttonreversekonc.bottom="50px";
         this.buttonreversekonc.top="";
+        this.subtitle.podsum1.seen=false;
       }
     },
     btnrevB: function () {
