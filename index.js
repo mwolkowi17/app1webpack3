@@ -198,7 +198,7 @@ var app = new Vue({
         this.buttonforwardkonc.top="72px";
         this.buttonreversekonc.bottom="";
         this.buttonreversekonc.top="72px";
-        this.subtitle.podsum1.seen=true;
+        this.subtitle.podsum2.seen=true;
       }
 
 
@@ -217,7 +217,7 @@ var app = new Vue({
         this.buttonforwardkonc.top="";
         this.buttonreversekonc.bottom="50px";
         this.buttonreversekonc.top="";
-        this.subtitle.podsum1.seen=false;
+        this.subtitle.podsum2.seen=false;
       }
     },
     btnrevB: function () {
@@ -244,6 +244,7 @@ var app = new Vue({
       if (this.appbackground.src === this.planszeTypB.src[0]) {
         this.appbackground.src = backgrounds[2];
         this.video.seen = true;
+        this.subtitle.podsum2.seen=false;
         this.buttonforwardkonc.bottom="50px";
         this.buttonforwardkonc.top="";
         this.buttonreversekonc.bottom="50px";
